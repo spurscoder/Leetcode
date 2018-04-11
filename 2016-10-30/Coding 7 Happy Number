@@ -1,0 +1,82 @@
+/* 问题描述
+写一个算法来判断一个数是不是"快乐数"。
+
+一个数是不是快乐是这么定义的：对于一个正整数，
+每一次将该数替换为他每个位置上的数字的平方和，
+然后重复这个过程直到这个数变为1，
+或是无限循环但始终变不到1。如果可以变为1，
+那么这个数就是快乐数。
+*/
+
+/** 
+思路1 定理
+所有的快乐数最终结果是1，而不快乐数最终都会进入4-16-...的循环中
+
+思路2 集合法
+把结果存到一个集合中，如果重复出现某个数字，则出现循环，程序结束
+如何出现1 则返回true
+*/
+
+// 思路1
+class Solution {
+public:
+    /**
+     * @param n an integer
+     * @return true if this is a happy number or false
+     */
+    bool isHappy(int n) {
+        // Write your code here
+        int result = 0, temp;
+        while (true) {
+        	temp = n % 10;
+        	result += temp * temp;
+        	n /= 10;
+        	if (n == 0) {
+        		n = result;
+        		result = 0;
+        		if (n == 4)
+        			return false;
+        		if (n == 1)
+        			return true;
+        	}
+        }
+    }
+};
+
+
+//思路2
+
+/*
+
+class Solution {
+public:
+    
+     // @param n an integer
+     // @return true if this is a happy number or false
+     
+    bool isHappy(int n) {
+        // Write your code here
+        std::set<int> myset;
+        std::set<int>::iterator it;
+        int result = 0, temp;
+        while (true) {
+        	temp = n % 10;
+        	result += temp * temp;
+        	n /= 10;
+        	if (n == 0) {
+        		n = result;
+        		result = 0;
+        		if (n == 1)
+        			return true;
+        		if (myset.count(n)) 
+        			return false;
+        		else
+        			myset.insert(n);
+        	}
+        }
+    }
+};
+
+*/
+
+//std::set集合的用法-------------------------------------------------
