@@ -1,5 +1,6 @@
 /*
-A message containing letters from A-Z is being encoded to numbers using the following mapping way:
+A
+message containing letters from A-Z is being encoded to numbers using the following mapping way:
 
 'A' -> 1
 'B' -> 2
@@ -22,7 +23,7 @@ Note:
 The length of the input string will fit in range [1, 105].
 The input string will only contain the character '*' and digits '0' - '9'.
 */
-#include <string>
+#include <string.h>
 
 using namespace std;
 
