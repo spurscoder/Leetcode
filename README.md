@@ -1,0 +1,2 @@
+# Leetcode
+MY CODE FOR LEETCODE
