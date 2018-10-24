@@ -1,5 +1,5 @@
 # Leetcode
 
-[![Build Status](https://travis-ci.org/dmlc/minpy.svg?branch=master)](https://travis-ci.org/dmlc/minpy)
+[![Build Status](https://travis-ci.com/spurscoder/Leetcode.svg?branch=master)](https://travis-ci.com/spurscoder/Leetcode)
 
 MY CODE FOR LEETCODE
