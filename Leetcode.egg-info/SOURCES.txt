@@ -1,6 +1,0 @@
-setup.cfg
-setup.py
-Leetcode.egg-info/PKG-INFO
-Leetcode.egg-info/SOURCES.txt
-Leetcode.egg-info/dependency_links.txt
-Leetcode.egg-info/top_level.txt
